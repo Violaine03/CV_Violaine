@@ -1,2 +1,17 @@
-<p>Suite à mes différentes expériences professionnelles, l'innovation digitale, le développement web et les relations avec les personnes m'attirent. Jeune diplômée depuis Septembre 2018 je recherche actuellement un CDI au poste de Product Owner.
-</p>
+
+<div class="container">
+    <img src="photo-cv-Violaine.jpg">
+
+    <div class="user-infos">
+        <% @users.each do |user| %>
+            <%= user.first_name %>
+            <%= user.last_name %>
+            <%= user.email %>
+            <%= user.phone_number %>
+        <% end %>
+    </div>
+
+    <p>Suite à mes différentes expériences professionnelles, l'innovation digitale, le développement web et les relations avec les personnes m'attirent. Jeune diplômée depuis Septembre 2018 je recherche actuellement un CDI au poste de Product Owner.
+    </p>
+
+</div>
