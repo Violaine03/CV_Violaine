@@ -1,17 +1,41 @@
+<svg class="test">
+  <filter id="monochrome" color-interpolation-filters="sRGB"
+          x="0" y="0" >
+    <feColorMatrix type="matrix"
+      values="1.00 0 0 0  0 
+              0.80 0 0 0  0  
+              0.65 0 0 0  0 
+                0  0 0 1  0" />
+  </filter>
+</svg>
+
+<img id="img_background_building" src="/assets/Building-0120db727d185bddd2c48c97ffd6fb9e9a9c4b0b8b1cd5709dee4385c2c2a69c.jpg">
 
 <div class="container">
-    <img src="photo-cv-Violaine.jpg">
 
-    <div class="user-infos">
-        <% @users.each do |user| %>
-            <%= user.first_name %>
-            <%= user.last_name %>
-            <%= user.email %>
-            <%= user.phone_number %>
-        <% end %>
+    <div class="user">
+        <div class="photo-user">
+            <%= image_tag "photo-cv-Violaine.jpg", id:"photo_cv_violaine"%>
+        </div>
+
+        <div class="user-infos">
+            <% @users.each do |user| %>
+                <%= user.first_name %>
+                <%= user.last_name %>
+                <h2><strong>Product Owner / Chef de Projet Digital</strong></h2>
+                <br>
+                <p>Email:</p>
+                <%= user.email %>
+                <p>Téléphone:</p>
+                <%= user.phone_number %>
+                <p>Date de naissance:</p>
+                <p>03/04/1992</p>
+            <% end %>
+        </div>
     </div>
 
-    <p>Suite à mes différentes expériences professionnelles, l'innovation digitale, le développement web et les relations avec les personnes m'attirent. Jeune diplômée depuis Septembre 2018 je recherche actuellement un CDI au poste de Product Owner.
+    <p>
+    Suite à mes différentes expériences professionnelles, l'innovation digitale, le développement web et les relations avec les personnes m'attirent. Jeune diplômée depuis Septembre 2018 je recherche actuellement un CDI au poste de Product Owner.
     </p>
 
 </div>

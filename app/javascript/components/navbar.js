@@ -15,3 +15,5 @@ function myFunction() {
     navbar.classList.remove("sticky");
   }
 }
+
+export { navbar };
