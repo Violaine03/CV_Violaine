@@ -12,24 +12,26 @@
 <img id="img_background_building" src="/assets/Building-0120db727d185bddd2c48c97ffd6fb9e9a9c4b0b8b1cd5709dee4385c2c2a69c.jpg">
 
 <div class="container">
-
     <div class="user">
         <div class="photo-user">
             <%= image_tag "photo-cv-Violaine.jpg", id:"photo_cv_violaine"%>
         </div>
-
         <div class="user-infos">
             <% @users.each do |user| %>
-                <%= user.first_name %>
-                <%= user.last_name %>
-                <h2><strong>Product Owner / Chef de Projet Digital</strong></h2>
-                <br>
-                <p>Email:</p>
-                <%= user.email %>
-                <p>Téléphone:</p>
-                <%= user.phone_number %>
-                <p>Date de naissance:</p>
-                <p>03/04/1992</p>
+                <div class="txt-user">
+                    <div class="name">
+                        <p id="first-name"><%= user.first_name %></p>
+                        <p><%= user.last_name %></p>
+                    </div>
+                    <h2><strong>Product Owner / Chef de Projet Digital</strong></h2>
+                    <br>
+                    <p><strong>Email:</strong></p>
+                    <p class="infos"><%= user.email %></p>
+                    <p><strong>Téléphone:</strong></p>
+                    <p class="infos"><%= user.phone_number %></p>
+                    <p><strong>Date de naissance:</strong></p>
+                    <p>03/04/1992</p>
+                </div>
             <% end %>
         </div>
     </div>
@@ -42,9 +44,9 @@
         </a>
     </div>
 
-    <h2>Hello, Hello</h2>
-    <p>
-    Suite à mes différentes expériences professionnelles, l'innovation digitale, le développement web et les relations avec les personnes m'attirent. Jeune diplômée depuis Septembre 2018 je recherche actuellement un CDI au poste de Product Owner.
+    <h2 id="intro-title">Hello, Hello</h2>
+    <p id="intro">
+        Suite à mes différentes expériences professionnelles, l'innovation digitale, le développement web et les relations avec les personnes m'attirent. Jeune diplômée depuis Septembre 2018 je recherche actuellement un CDI au poste de Product Owner.
     </p>
 
 </div>
