@@ -1,0 +1,76 @@
+#img_background_building {
+    filter: url(#monochrome);
+    position: relative;
+}
+
+#photo_cv_violaine{
+    width: 500px;
+    height: 500px;
+}
+
+#first-name {
+    margin-right: 12px;
+}
+
+#instagram-link {
+    background: #182153;
+    width: 1000px;
+    height: 60px;
+    margin-left: 65px; 
+    text-align: center;
+}
+
+#intro-title{
+    text-align: center;
+    margin-top: 20px;
+}
+
+#intro{
+    text-align: center;
+    margin-top: 20px;
+}
+
+#linkedin-btn {
+    color: white;
+    margin-top: 50px;
+}
+
+.bi-linkedin {
+    margin-top: 15px;
+}
+
+.infos {
+    margin-bottom: 10px;
+}
+
+.name{
+    font-size: 40px;
+    font-weight: bold;
+    display: flex;
+    margin-top: 20px;
+}
+
+.txt-user {
+    margin-left: 20px;
+}
+
+.user {
+    display: flex;
+    position: absolute;
+    top: 180px;
+    left: 150px;
+}
+
+.user-infos {
+    width: 500px;
+    height: 500px;
+    background-color: white;
+}
+
+p {
+    margin: 0px;
+}
+
+h2 {
+    font-size: 1.5rem;
+}
