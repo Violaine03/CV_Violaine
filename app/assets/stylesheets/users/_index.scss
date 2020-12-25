@@ -1,5 +1,6 @@
 #img_background_building {
     filter: url(#monochrome);
+    position: relative;
 }
 
 #photo_cv_violaine{
@@ -7,12 +8,32 @@
     height: 500px;
 }
 
+#instagram-link {
+    background: #182153;
+    width: 1000px;
+    height: 60px;
+    margin-left: 65px; 
+    text-align: center;
+}
+
+#linkedin-btn {
+    color: white;
+    margin-top: 50px;
+}
+
+.bi-linkedin {
+    margin-top: 15px;
+}
+
 .user {
     display: flex;
+    position: absolute;
+    top: 180px;
+    left: 150px;
 }
 
 .user-infos {
     width: 500px;
     height: 500px;
-    background-color: yellow;
+    background-color: white;
 }
